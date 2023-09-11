@@ -21,3 +21,7 @@ npm i --save ngx-swiperjs swiper
 ```
 
 check **example** for more details.
+
+## Screenshot
+
+![screnshot](https://raw.githubusercontent.com/wikylyu-xyz/ngx-swiperjs/master/screenshot/screenshot1.png)
