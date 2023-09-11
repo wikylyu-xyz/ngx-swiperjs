@@ -1,0 +1,11 @@
+:host {
+  display: block;
+  text-align: center;
+  box-sizing: border-box;
+  padding-top: 80px;
+  ngx-swiper {
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

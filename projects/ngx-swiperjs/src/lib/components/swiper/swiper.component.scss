@@ -1,0 +1,11 @@
+:host {
+  display: block;
+
+  swiper-container {
+    swiper-slide {
+      width: fit-content;
+      height: 100%;
+      max-width: 100%;
+    }
+  }
+}
