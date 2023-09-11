@@ -1,12 +1,14 @@
 {
   "name": "ngx-swiperjs",
-  "version": "0.0.1",
-  "peerDependencies": {},
+  "version": "0.0.3",
+  "peerDependencies": {
+    "swiper": ">=10.2.0",
+    "@angular/common": ">=16.2.0",
+    "@angular/core": ">=16.2.0"
+  },
+  "license": "MIT",
   "dependencies": {
-    "tslib": "^2.3.0",
-    "swiper": "^10.2.0",
-    "@angular/common": "^16.2.0",
-    "@angular/core": "^16.2.0"
+    "tslib": "^2.3.0"
   },
   "sideEffects": false
 }

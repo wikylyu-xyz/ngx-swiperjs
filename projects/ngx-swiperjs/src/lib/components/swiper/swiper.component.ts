@@ -8,8 +8,6 @@ import {
 } from '@angular/core';
 import { SwiperOptions } from 'swiper/types';
 
-import { register } from 'swiper/element/bundle';
-
 @Directive({ selector: '[ngx-swiper-slide]' })
 export class SlideDirective {
   constructor(public template: TemplateRef<any>) {}
@@ -26,7 +24,5 @@ export class SwiperComponent {
 
   @Input() height: string = '600px';
 
-  constructor() {
-    register();
-  }
+  constructor() {}
 }
