@@ -20,6 +20,31 @@ npm i --save ngx-swiperjs swiper
 </ngx-swiper>
 ```
 
+**config** is a **SwiperOptions** imported from **swiper/types**
+
+```typescript
+import { SwiperOptions } from 'swiper/types';
+import { Mousewheel, Navigation, Pagination, A11y } from 'swiper/modules';
+
+...
+  public config: SwiperOptions = {
+    modules: [Navigation, Pagination, A11y, Mousewheel],
+    autoHeight: true,
+    spaceBetween: 20,
+    navigation: true,
+    pagination: { clickable: true, dynamicBullets: true },
+    slidesPerView: 'auto',
+    centeredSlides: true,
+    breakpoints: {
+      400: {
+        slidesPerView: 'auto',
+        centeredSlides: false,
+      },
+    },
+  };
+...
+```
+
 check **example** for more details.
 
 ## Screenshot

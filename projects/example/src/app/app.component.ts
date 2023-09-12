@@ -1,13 +1,6 @@
 import { Component } from '@angular/core';
-import {
-  A11y,
-  Mousewheel,
-  Navigation,
-  Pagination,
-  SwiperOptions,
-} from 'projects/ngx-swiperjs/src/public-api';
-// import { SwiperOptions } from 'swiper/types';
-// import { Mousewheel, Navigation, Pagination, A11y } from 'swiper/modules';
+import { SwiperOptions } from 'swiper/types';
+import { Mousewheel, Navigation, Pagination, A11y } from 'swiper/modules';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
