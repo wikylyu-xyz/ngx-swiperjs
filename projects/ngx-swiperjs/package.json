@@ -1,6 +1,6 @@
 {
   "name": "ngx-swiperjs",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "peerDependencies": {
     "swiper": ">=10.2.0",
     "@angular/common": ">=16.2.0",

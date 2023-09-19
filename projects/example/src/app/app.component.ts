@@ -1,6 +1,12 @@
 import { Component } from '@angular/core';
 import { SwiperOptions } from 'swiper/types';
-import { Mousewheel, Navigation, Pagination, A11y } from 'swiper/modules';
+import {
+  Mousewheel,
+  Navigation,
+  Pagination,
+  A11y,
+  Autoplay,
+} from 'swiper/modules';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -8,8 +14,11 @@ import { Mousewheel, Navigation, Pagination, A11y } from 'swiper/modules';
 })
 export class AppComponent {
   public config: SwiperOptions = {
-    modules: [Navigation, Pagination, A11y, Mousewheel],
+    modules: [Navigation, Pagination, A11y, Mousewheel, Autoplay],
     autoHeight: true,
+    autoplay: {
+      delay: 1000,
+    },
     spaceBetween: 20,
     navigation: true,
     pagination: { clickable: true, dynamicBullets: true },

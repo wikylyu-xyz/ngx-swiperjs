@@ -10,6 +10,20 @@ npm i --save ngx-swiperjs swiper
 
 ## Usage
 
+Import **NgxSwiperjsModule**
+
+```typescript
+@NgModule({
+  declarations: [AppComponent],
+  imports: [BrowserModule, NgxSwiperjsModule],
+  providers: [],
+  bootstrap: [AppComponent],
+})
+export class AppModule {}
+```
+
+Use **ngx-swiper** and **ngx-swiper-slide**
+
 ```html
 <ngx-swiper [config]="config" height="600px">
   <ng-container *ngFor="let s of screenshots">

@@ -1,5 +1,6 @@
 import { AfterViewInit, Directive, ElementRef, Input } from '@angular/core';
 import { SwiperOptions } from 'swiper/types';
+import { SwiperContainer } from 'swiper/element';
 
 @Directive({
   selector: '[ngxSwiper]',
@@ -19,5 +20,10 @@ export class SwiperDirective {
 
     // @ts-ignore
     this.el.nativeElement.initialize();
+    // @ts-ignore
+    if (this.el.nativeElement.swiper.autoplay) {
+      // @ts-ignore
+      this.el.nativeElement.swiper.autoplay.start();
+    }
   }
 }
