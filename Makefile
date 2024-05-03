@@ -6,3 +6,6 @@ build:
 
 example: build
 	ng s example
+
+publish: build
+	cd dist/ngx-swiperjs && npm publish --access=public

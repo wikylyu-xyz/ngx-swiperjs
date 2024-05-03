@@ -1,6 +1,6 @@
 {
-  "name": "ngx-swiperjs",
-  "version": "0.0.5",
+  "name": "@wikylyu/ngx-swiperjs",
+  "version": "0.1.3",
   "peerDependencies": {
     "swiper": ">=10.2.0",
     "@angular/common": ">=16.2.0",
@@ -14,5 +14,20 @@
   "dependencies": {
     "tslib": "^2.3.0"
   },
-  "sideEffects": false
+  "sideEffects": false,
+  "description": "This is a simple Angular wrapper for [swiper](https://swiperjs.com/element).",
+  "bugs": {
+    "url": "https://github.com/wikylyu-xyz/ngx-swiperjs/issues"
+  },
+  "homepage": "https://github.com/wikylyu-xyz/ngx-swiperjs#readme",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "angular",
+    "swipperjs"
+  ],
+  "author": "Wiky Lyu"
 }
