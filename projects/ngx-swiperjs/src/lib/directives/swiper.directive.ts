@@ -16,12 +16,15 @@ export class SwiperDirective {
   }
 
   ngAfterViewInit() {
+    if (!this.el.nativeElement) {
+      return;
+    }
     Object.assign(this.el.nativeElement, this.config);
 
     // @ts-ignore
-    this.el.nativeElement.initialize();
+    this.el.nativeElement?.initialize();
     // @ts-ignore
-    if (this.el.nativeElement.swiper.autoplay) {
+    if (this.el.nativeElement?.swiper?.autoplay) {
       // @ts-ignore
       this.el.nativeElement.swiper.autoplay.start();
     }
