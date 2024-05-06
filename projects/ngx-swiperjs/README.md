@@ -5,7 +5,7 @@ This is a simple Angular wrapper for [swiper](https://swiperjs.com/element).
 ## Install
 
 ```shell
-npm i --save ngx-swiperjs swiper
+npm i --save @wikylyu/ngx-swiperjs swiper
 ```
 
 ## Usage
@@ -26,11 +26,11 @@ Use **ngx-swiper** and **ngx-swiper-slide**
 
 ```html
 <ngx-swiper [config]="config" height="600px">
-  <ng-container *ngFor="let s of screenshots">
-    <div *ngx-swiper-slide style="width: 360px; height: 100%">
-      <img [src]="s" style="max-width: 100%; max-height: 100%" />
-    </div>
-  </ng-container>
+  @for(s of screenshots; track: $index){
+  <div *ngx-swiper-slide style="width: 360px; height: 100%">
+    <img [src]="s" style="max-width: 100%; max-height: 100%" />
+  </div>
+  }
 </ngx-swiper>
 ```
 

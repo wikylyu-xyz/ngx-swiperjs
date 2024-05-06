@@ -1,6 +1,6 @@
 {
   "name": "@wikylyu/ngx-swiperjs",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "peerDependencies": {
     "swiper": ">=10.2.0",
     "@angular/common": ">=16.2.0",
