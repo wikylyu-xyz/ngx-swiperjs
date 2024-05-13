@@ -1,5 +1,7 @@
 <swiper-container ngxSwiper [config]="config" [ngStyle]="{ height: height }">
-  <swiper-slide *ngFor="let slide of slides">
+  @for (slide of slides; track $index) {
+  <swiper-slide>
     <ng-container *ngTemplateOutlet="slide.template"></ng-container>
   </swiper-slide>
+  }
 </swiper-container>
